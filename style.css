@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap");
+
+/* common styles */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+a,
+a:visited {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.capped {
+  padding: 0 16px;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.logo-sub-title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+.blog {
+  margin-bottom: 20px;
+}
+
+.featured-post {
+  margin-top: 50px;
+}
+
+.post {
+  height: 300px;
+  width: auto;
+  background-color: aquamarine;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  .capped {
+    padding: 0 12%;
+  }
+
+  .featured-post {
+    margin-top: 100px;
+  }
+
+  .blog-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .blog-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .p-1 {
+    grid-column-start: 1;
+    grid-column-end: span end;
+  }
+
+  footer {
+    height: 100px;
+  }
+}
