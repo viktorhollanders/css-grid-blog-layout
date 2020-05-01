@@ -42,14 +42,16 @@ header {
 
 h1 {
   margin: 0;
+  max-width: 60px;
 }
 
 .logo-sub-title {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 300;
 }
 
 nav a {
+  font-size: 16px;
   padding-left: 20px;
 }
 
@@ -69,6 +71,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 20px;
 }
 
 .number {
@@ -81,9 +85,23 @@ footer {
   height: 50px;
 }
 
+@media screen and (min-width: 400px) {
+  h1 {
+    max-width: 140px;
+  }
+
+  .logo-sub-title {
+    font-size: 18px;
+  }
+}
+
 @media screen and (min-width: 700px) {
-  .capped {
-    padding: 0 12%;
+  .blog {
+    margin-bottom: 20px;
+  }
+
+  .post {
+    margin-bottom: 0;
   }
 
   .featured-post {
@@ -109,5 +127,11 @@ footer {
 
   footer {
     height: 100px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .capped {
+    padding: 0 12%;
   }
 }
